@@ -1,5 +1,5 @@
 // Service worker manuel pour DiscipliSoft
-const VERSION = 'disciplisoft-v5'; // <-- Version courante
+const VERSION = 'disciplisoft-v6'; // <-- Version courante
 const CACHE_STATIQUE = `${VERSION}-static`;
 const CACHE_RUNTIME  = `${VERSION}-runtime`;
 

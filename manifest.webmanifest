@@ -1,4 +1,5 @@
 {
+  "id": "/disciplisoft/v2",
   "name": "DiscipliSoft",
   "short_name": "DiscipliSoft",
   "description": "Gestion de la vie scolaire pour surveillant général",
@@ -7,7 +8,7 @@
   "scope": "/disciplisoft/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#ffffff",
+  "background_color": "#0f5132",
   "theme_color": "#0f5132",
   "icons": [
     { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
