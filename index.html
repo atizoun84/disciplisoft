@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f5132" />
+  <link rel="manifest" href="/disciplisoft/manifest.webmanifest" />
+  <link rel="icon" type="image/png" href="/disciplisoft/icon-192.png" />
+  <link rel="apple-touch-icon" href="/disciplisoft/icon-192.png" />
+  <title>DiscipliSoft</title>
+  <script type="module" crossorigin src="/disciplisoft/index-B9oiGjyz.js"></script>
+  <link rel="modulepreload" crossorigin href="/disciplisoft/rolldown-runtime-WkwZ5CU-.js">
+  <link rel="stylesheet" crossorigin href="/disciplisoft/index-k2RsIAk0.css">
+</head>
+<body>
+  <header class="app-header">
+    <button id="btn-menu" class="btn-burger" aria-label="Ouvrir le menu">☰</button>
+    <div class="header-titre">
+      <h1 id="titre-page">DiscipliSoft</h1>
+      <span id="entete-etab" class="sous-titre-entete"></span>
+    </div>
+    <div class="header-droite">
+      <a href="#/recherche" class="btn-recherche-header" aria-label="Rechercher un élève">🔍</a>
+      <span id="entete-annee" class="annee-entete"></span>
+      <svg class="drapeau-benin" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg" aria-label="Drapeau du Bénin" role="img">
+        <rect width="30" height="20" fill="#FCD116"/>
+        <rect y="10" width="30" height="10" fill="#E8112D"/>
+        <rect width="12" height="20" fill="#008751"/>
+      </svg>
+    </div>
+  </header>
+
+  <aside id="drawer" class="drawer" aria-hidden="true">
+    <div class="drawer-entete">
+      <strong>DiscipliSoft</strong>
+      <button id="btn-fermer-drawer" class="btn-fermer" aria-label="Fermer le menu">×</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#/"           data-route="/">          <span class="ico">🏠</span>Accueil</a>
+      <a href="#/incidents"  data-route="/incidents"> <span class="ico">⚠️</span>Incidents</a>
+      <a href="#/eleves"     data-route="/eleves">    <span class="ico">👥</span>Élèves</a>
+      <a href="#/recherche"  data-route="/recherche"> <span class="ico">🔍</span>Rechercher un élève</a>
+      <a href="#/classes"    data-route="/classes">   <span class="ico">🏫</span>Classes</a>
+      <a href="#/stats"      data-route="/stats">     <span class="ico">📊</span>Statistiques</a>
+      <a href="#/parametres" data-route="/parametres"><span class="ico">⚙️</span>Paramètres</a>
+    </nav>
+    <div class="drawer-pied">
+      <div class="sous-titre" style="font-size:12px;padding:12px 16px;color:var(--gris);">
+        Conçu par<br><strong>Atizoun Plateny AMOUSSOU</strong>
+      </div>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay" hidden></div>
+
+  <main id="app"></main>
+
+  <footer class="app-footer">
+    <div class="footer-ligne">
+      <strong>DiscipliSoft</strong> · Conçu par <strong>Atizoun Plateny AMOUSSOU</strong>
+    </div>
+    <div class="footer-ligne">
+      ✉️ <a href="mailto:atizoun@gmail.com">atizoun@gmail.com</a>
+      · 📞 <a href="tel:+2290197744035">01 97 74 40 35</a>
+    </div>
+    <div class="footer-ligne footer-version">v0.3 · Vie scolaire CEG</div>
+  </footer>
+
+
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for(let registration of registrations) {
+          registration.unregister();
+          console.log('Service Worker désinscrit');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
